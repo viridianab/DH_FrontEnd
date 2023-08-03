@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>petshop</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-superior">
+        <p class="header-superior__ofertas">Grandes ofertas en comederos</p>
+
+        <ul class="header-superior__regional">
+          <li>
+            <a class="header-superior__enlace" href="#"
+              >Español <span class="dropdown-icon">&#x25BE;</span
+              ><img src="" alt="" />
+            </a>
+          </li>
+          <li>
+            <a class="header-superior__enlace" href="#"
+              >$ARG <span class="dropdown-icon">&#x25BE;</span></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="header-principal">
+        <div class="header-principal__logo">
+          <img
+            class="header-principal__imagen"
+            src="img/cat.svg"
+            alt="logo-cat"
+          />
+          <h1 class="header-principal__heading"><span>Front</span>Cat&Dog</h1>
+          <img
+            class="header-principal__imagen"
+            src="img/dog.svg"
+            alt="logo-dog"
+          />
+        </div>
+
+        <nav class="header-menu">
+          <ul class="header-menu__flex">
+            <li>
+              <img src="img/huella.png" alt="" />
+              <a class="header-menu__enlace" href="#">Categorías</a>
+            </li>
+            <li>
+              <img src="img/huella.png" alt="" /><a
+                class="header-menu__enlace"
+                href="#"
+                >Pets</a
+              >
+            </li>
+            <li>
+              <img src="img/huella.png" alt="" /><a
+                class="header-menu__enlace"
+                href="#"
+                >Nosotros</a
+              >
+            </li>
+            <li>
+              <img src="img/huella.png" alt="" /><a
+                class="header-menu__enlace"
+                href="#"
+                >Contactanos</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="banner">
+      <div class="banner__contenido">
+        <div class="banner__informacion">
+          <h2 class="banner__heading">¡Es un placer tenerte aquí!</h2>
+          <p class="banner__texto">¡Comederos en descuento</p>
+          <a class="banner__enlace" href="">COMEDEROS</a>
+        </div>
+      </div>
+    </section>
+
+    <main class="contenedor">
+      <section class="destacados">
+        <img
+          class="destacados__imagen"
+          src="img/productos-destacados.svg"
+          alt=""
+        />
+
+        <h2 class="destacados__heading">Productos Destacados</h2>
+        <div class="destacados__contenido">
+          <p class="destacados__texto">Comederos - Accesorios - Comida</p>
+        </div>
+      </section>
+
+      <section class="productos">
+        <div class="producto">
+          <img
+            class="producto__imagen"
+            src="img/churrasquito.png"
+            alt="imagen-churrasquito"
+          />
+
+          <div class="producto__contenido">
+            <h3 class="producto__heading">Juguete Churrasquito</h3>
+            <p class="producto__texto">$150</p>
+          </div>
+        </div>
+        <div class="producto">
+          <img
+            class="producto__imagen"
+            src="img/comedero.png"
+            alt="imagen-churrasquito"
+          />
+          <div class="producto__contenido">
+            <h3 class="producto__heading">Comedero para perro</h3>
+            <p class="producto__texto">$250</p>
+          </div>
+        </div>
+        <div class="producto">
+          <img
+            class="producto__imagen"
+            src="img/huesito.png"
+            alt="imagen-churrasquito"
+          />
+          <div class="producto__contenido">
+            <h3 class="producto__heading">Juguete Huesito</h3>
+            <p class="producto__texto">$650</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contactanos">
+        <h2 class="contactanos__heading">Contáctanos</h2>
+        <form class="formulario" action="">
+          <input
+            class="formulario__nombre"
+            type="text"
+            placeholder="Nombre y Apellido"
+          />
+          <input
+            class="formulario__correo"
+            type="text"
+            placeholder="Ingresá tu correo electrónico"
+          />
+          <input
+            class="formulario__telefono"
+            type="text"
+            placeholder="Teléfono"
+          />
+
+          <div class="botones">
+            <button class="botones__resetear" type="submit">Resetear</button>
+            <button class="botones__enviar" type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <section class="suscripcion">
+      <div class="suscripcion__contenido">
+        <img
+          class="suscripcion__imagen"
+          src="img/enviar-correo.svg"
+          alt="enviar-correo"
+        />
+        <p class="suscripcion__texto">Suscríbete para más novedades</p>
+      </div>
+      <div class="suscripcion__busqueda">
+        <input
+          class="suscripcion__correo"
+          type="text"
+          placeholder="Ingresá tu correo electronico"
+        />
+        <button class="suscripcion__envio" type="submit">Suscribirme</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__flex contenedor contenedor--footer">
+        <div class="footer__informacion">
+          <div class="footer__localidad">
+            <img
+              class="footer__imagen"
+              src="img/localidad.svg"
+              alt="imagen-localidad"
+            />
+            <div class="footer__descripcion">
+              <h3 class="footer__heading">Localidad</h3>
+              <p class="footer__texto">Calle - provincia</p>
+            </div>
+          </div>
+          <div class="footer__telefono">
+            <img src="img/telefono.svg" alt="imagen-telefono" />
+            <div class="footer__descripcion">
+              <h3 class="footer__heading">Teléfono</h3>
+              <p class="footer__texto">Número de teléfono</p>
+            </div>
+          </div>
+          <div class="footer__correo">
+            <img src="img/correo-electronico.svg" alt="" />
+            <div class="footer__descripcion">
+              <h3 class="footer__heading">Correo Electrónico</h3>
+              <p class="footer__texto">Dirección de correo</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__logo">
+          <div class="header-principal__logo">
+            <img
+              class="header-principal__imagen"
+              src="img/cat.svg"
+              alt="logo-cat"
+            />
+            <h1
+              class="header-principal__heading header-principal__heading--orange"
+            >
+              Front<span>Cat&Dog</span>
+            </h1>
+            <img
+              class="header-principal__imagen"
+              src="img/dog.svg"
+              alt="logo-dog"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="footer-barra-inferior">
+        <p class="footer-barra-inferior__texto">
+          Todos los derechos reservados - Frontend JorgeDevmm
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,325 @@
+html, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.descuentos {
+    background-color: #1bd1b0;
+    padding: 10px 26px;
+    width: 100%;
+}
+.descuentos span {
+    font-size: 15px;
+}
+.heroes {
+    
+    background-color: #00669f;
+    width: 100%;
+    padding: 10px 26px;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+.heroes h1 {
+    font-size: 40px;
+    padding: 10px 0.9px;
+}
+/* Contenido */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    padding: 300px 31px;
+    gap: 0 30px;
+}
+.card {
+    width: 30%;
+}
+.card-header {
+    position: relative;
+    height: 194px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-size: cover;
+}
+.card-header.batman {
+    background-image: url('img/batman_card.png');
+}
+.card-header.harley {
+    background-image: url('img/harley_card.png');
+}
+.card-header img {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 30px;
+}
+.card-content {
+    position: relative;
+    padding: 55px 20px;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card-content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: -50px auto 0;
+    width: 120px;
+    border-radius: 50%;
+}
+.card-content h2 {
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    margin: 30px auto 20px;
+}
+/*
+.batman1 {
+    position: relative;
+    width: 20%;
+    height: 75%;
+    top: 185px;
+    left: 0%;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.imgbatman1 .like {
+    position: absolute;
+    z-index: 3;
+    width: 2%;
+    height: 6%;
+    left: 2%;
+    top: 4%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50%;
+}
+.imgbatman1 .banner {
+    position: absolute;
+    width: 20%;
+    height: 60%;
+    left: 0%;
+    top: 5px;
+    border-radius: 5%;
+}
+.imgbatman1 .perfil {
+    position: absolute;
+    z-index: 1;
+    width: 10%;
+    height: 30%;
+    left: 5%;
+    top: 20%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50%;
+}
+
+.batman1 h2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 25%;
+    font-size: 200%;
+}
+
+.batman1 p {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    margin-top: 30%;
+    padding: 10%;
+    font-size: 110%;
+}
+
+.batman1 button {
+    position: absolute;
+    z-index: 2;
+    width: 40%;
+    height: 15%;
+    left: 30%;
+    top: 80%;
+    color: white;
+    background-color: #00669f;
+    border: none;
+
+}
+
+
+
+.harley {
+    position: relative;
+    width: 20%;
+    height: 75%;
+    top: -160px;
+    left: 30%;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.imgharley .like {
+    position: absolute;
+    z-index: 3;
+    width: 2%;
+    height: 6%;
+    left: 32%;
+    top: 4%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50%;
+
+}
+
+.imgharley .banner {
+    position: absolute;
+    width: 20%;
+    height: 60%;
+    left: 30%;
+    top: 5px;
+    border-radius: 5%;
+}
+
+.imgharley .perfil {
+    position: absolute;
+    z-index: 1;
+    width: 10%;
+    height: 30%;
+    left: 35%;
+    top: 20%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50%;
+}
+
+.harley h2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin: 25% 0% 20% 0%;
+    font-size: 190%;
+}
+
+.harley p {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    margin-top: 30%;
+    padding: 10%;
+    font-size: 110%;
+}
+
+.harley button {
+    position: absolute;
+    z-index: 2;
+    width: 40%;
+    height: 15%;
+    left: 30%;
+    top: 80%;
+    color: white;
+    background-color: #00669f;
+    border: none;
+
+}
+
+
+.batman2 {
+    position: relative;
+    width: 20%;
+    height: 75%;
+    top: -505px;
+    left: 60%;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.imgbatman2 .like {
+    position: absolute;
+    z-index: 3;
+    width: 2%;
+    height: 6%;
+    left: 61%;
+    top: 4%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50%;
+
+}
+
+.imgbatman2 .banner {
+    position: absolute;
+    width: 20%;
+    height: 60%;
+    left: 60%;
+    top: 5px;
+    border-radius: 5%;
+}
+
+.imgbatman2 .perfil {
+    position: absolute;
+    z-index: 1;
+    width: 10%;
+    height: 30%;
+    left: 65%;
+    top: 20%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50%;
+}
+
+.batman2 h2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 25%;
+    font-size: 200%;
+}
+
+.batman2 p {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    margin-top: 30%;
+    padding: 10%;
+    font-size: 110%;
+}
+
+.batman2 button {
+    position: absolute;
+    z-index: 2;
+    width: 40%;
+    height: 15%;
+    left: 30%;
+    top: 80%;
+    color: white;
+    background-color: #00669f;
+    border: none;
+
+}
+*/
+footer {
+    background-color: #00669f;
+    height: 30px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+
+
+}
